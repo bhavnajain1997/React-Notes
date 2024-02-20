@@ -1,0 +1,32 @@
+{
+  "name": "episode-2-igniting",
+  "version": "1.0.0",
+  "description": "this is react tut",
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhavna-Jain-create/React-Namaste-Notes.git"
+  },
+  "author": "Bhavna Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bhavna-Jain-create/React-Namaste-Notes/issues"
+  },
+  "homepage": "https://github.com/Bhavna-Jain-create/React-Namaste-Notes#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+    
+  ]
+}
