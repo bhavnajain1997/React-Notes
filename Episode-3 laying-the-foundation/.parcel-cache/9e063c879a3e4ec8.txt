@@ -25,14 +25,14 @@
 113C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\semver\bin\semver.js133529903262980893 0
 99C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\base-x133529903256402133 1
 107C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\domelementtype133529903258759195 1
-84C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist133529970518221724 1
+84C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist133530180090087475 1
 153C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node133529903266559489 1
 117C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\semver\functions\sort.js133529903263143672 0
 130C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\runtime-js\src\helpers\worker133529903263143672 1
 97C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso133529903265588827 1
 153C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\core\test\fixtures\main-format-mismatch\package.json133529903267770042 0
 124C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\regions\WF.js133529903273139712 0
-90C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\.gitignore133529906419249804 0
+90C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\.gitignore133530057827955576 0
 137C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-htmlnano\node_modules\csso133529903263813903 1
 115C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\js-yaml\lib\snippet.js133529903262121114 0
 146C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso\node_modules\css-tree\cjs\parser\SyntaxError.cjs133529903265994828 0
@@ -41,7 +41,7 @@
 123C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\nth-check\lib\esm\index.js.map133529903260201248 0
 117C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\emoji-regex\package.json133529903254358635 0
 142C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest2.c133529903264712463 0
-86C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\App.js133529970516808094 0
+86C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\App.js133530184898034139 0
 122C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso\lib\restructure\utils.js133529903265508204 0
 106C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\color-convert133529903258144242 1
 119C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\color-convert\package.json133529903254400677 0
@@ -100,7 +100,7 @@
 146C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\css-select\node_modules\dom-serializer\lib\index.d.ts133529903260347244 0
 113C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\.bin\detect-libc.ps1133529903273922762 0
 149C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\replace133529903263560137 1
-89C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\README.md133530007386984226 0
+89C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\README.md133530056183331972 0
 153C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso\node_modules\css-tree\cjs\syntax\node\AtrulePrelude.cjs133529903258125440 0
 97C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\.bin133529904991820207 1
 133C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\css-select\lib\pseudo-selectors\index.js133529903260494891 0
@@ -1067,7 +1067,7 @@
 102C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\svgo\dist133529903256470940 1
 134C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\core\src\requests\EntryRequest.js133529903264712463 0
 101C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\svgo\lib133529903262360641 1
-107C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.9e4c6fd2.css.map133529970027041300 0
+107C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.9e4c6fd2.css.map133530153212242429 0
 136C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\compressor-raw\lib\RawCompressor.js133529903255428815 0
 153C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso\node_modules\css-tree\cjs\utils\create-custom-error.cjs133529903260857244 0
 117C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\watcher\index.js133529903255846171 0
@@ -2078,7 +2078,7 @@
 137C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\lmdb\node_modules\node-addon-api\except.gypi133529903256301627 0
 114C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\msgpackr\unpack.d.cts133529903259243318 0
 119C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\entities\lib\maps\xml.json133529903259879544 0
-95C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.html133529970027011282 0
+95C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.html133530153213040670 0
 113C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\msgpackr\unpack.d.ts133529903263976751 0
 115C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\csso\cjs\clean\Raw.cjs133529903262494961 0
 118C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\packager-wasm\lib133529903257019985 1
@@ -3992,7 +3992,7 @@
 124C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\regions\AU.js133529903263062484 0
 130C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\features\datauri.js133529903268549886 0
 124C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\regions\AZ.js133529903263560137 0
-102C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.7826abd7.js133529970518118279 0
+102C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.7826abd7.js133530180089991977 0
 126C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@swc\helpers\src\_export_star.mjs133529903269531755 0
 124C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\regions\BE.js133529903264133023 0
 124C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\caniuse-lite\data\regions\BG.js133529903264374018 0
@@ -5330,7 +5330,7 @@
 162C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeXMLProcInst.js133529903264374018 0
 154C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\sortAttrs.js133529903264538304 0
 161C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\sortDefsChildren.js133529903264538304 0
-103C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.9e4c6fd2.css133529970027021289 0
+103C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.9e4c6fd2.css133530153212195664 0
 161C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\_applyTransforms.js133529903256200861 0
 150C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\css-tools.js133529903262121114 0
 147C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\parser.js133529903262687920 0
@@ -6033,4 +6033,4 @@
 108C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\.bin\semver.cmd133529903273930428 0
 102C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\.bin\svgo133529903273930428 0
 120C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\node_modules\.bin\update-browserslist-db133529903273939023 0
-106C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.7826abd7.js.map133529970518211661 0
+106C:\Users\HI\Desktop\Bhuvi\React tutorial folder\Episode-3 laying-the-foundation\dist\index.7826abd7.js.map133530180090067691 0
