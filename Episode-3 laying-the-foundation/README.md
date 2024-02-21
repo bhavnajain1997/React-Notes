@@ -17,3 +17,16 @@ JSX:-
 JSX => React.createElement => Object => HTMLElement(render).
 
 ** Note:- If you have to give attribute to JSX. you have to use camelcase. **
+
+React Components:- Everything is a Component in React.
+
+There are two types of components in react:-
+1. Class Based Component:- It uses Javascript Classes
+2. Functional Component: - It uses Javascript Functions.
+
+What is a React Functional Components?
+
+React functional Component is just like a normal Javascript function,which returns some piece of JSX.
+
+What is a Component Composition?
+Component composition means two components into one another.
