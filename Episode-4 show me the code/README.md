@@ -38,3 +38,11 @@ const header = ({resName,cuisine}) =>{
 
 Config Driven UI :- A website is driven/designed by data. Controlling your UI how the UI looks like using Data/Config.
 
+Where the Config comes from?
+Config comes from backend.
+Api -> Config
+
+///////////////////////////////////////////////////////////////////////////////////
+*Note:- React itself says that never use index as a key.
+
+
