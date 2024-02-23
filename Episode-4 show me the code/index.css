@@ -67,3 +67,7 @@
     border-color: #000;
     cursor: pointer;
 }
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}

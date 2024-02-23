@@ -1,4 +1,5 @@
-#Food Ordering App Structure
+# Episode-4 Talk is cheap, show me the code.
+# Food Ordering App Structure
 
 1. Header Component
   - Logo
@@ -44,5 +45,26 @@ Api -> Config
 
 ///////////////////////////////////////////////////////////////////////////////////
 *Note:- React itself says that never use index as a key.
+
+***************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+# Episode-5 Let's get hooked
+
+React Hooks:- 
+
+# There are two types of Export and Inport
+1. Default Export / Default Import 
+
+   export default Component;
+   import Component from "path";
+
+** Note :- A module cannot have a multiple default exports. **
+2. Named Export  / Named Import:- If you export multiple things from the same file. 
+
+   export const Component;
+   import {Component} from "path";
+
+
+
 
 
