@@ -45,12 +45,13 @@ Api -> Config
 
 ///////////////////////////////////////////////////////////////////////////////////
 *Note:- React itself says that never use index as a key.
+* Optional Chaining:- Allows us to access an Object's properties without having to check if the object or it's properties exist.
+=> represented by '?'
+=> new feature introduced in javascript ES2020.
 
 ***************************************************************************************************************************************************************************************************************************************************************************************************************************
 
 # Episode-5 Let's get hooked
-
-React Hooks:- 
 
 # There are two types of Export and Inport
 1. Default Export / Default Import 
@@ -63,6 +64,27 @@ React Hooks:-
 
    export const Component;
    import {Component} from "path";
+
+# State Variable:-
+Super Power of React Variable
+
+React Hooks:- A React Hooks is a normal Javascript function,which is given to us by React.It is pre build the only things is that the function comes with some super power tht function has some logic return behind the scene in React.
+
+React Hooks (Normal JS utility function)
+useState():- Superpower State variables in react.useState is to create state variable that is why the name is useState.
+New way of creating variables. 
+   const [searchTxt] = useState();
+If we have to create local variables in react,you need to useState variables.
+
+useEffect():- 
+
+* Render:- Whenever a state variable is updates React will re-renders the component. 
+* Re-render :- The logic of updates is UI is known as re-rendering.
+
+* Reconcillation Algorithm:- Reconcillation Algorithm is also known as React fiber.
+
+* Virtual DOM:- It is not an actual DOM.It is representation of Actual DOM.
+
 
 
 
