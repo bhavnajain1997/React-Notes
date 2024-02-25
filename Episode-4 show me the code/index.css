@@ -71,3 +71,36 @@
     margin: 10px;
     cursor: pointer;
 }
+.shim-cont{
+    max-width: 1200px;
+    margin: auto;
+    margin: 20px auto;
+    
+  }
+  .top-btn{
+    width: 200px;
+    height: 30px;
+    background: #f0f0f0;
+  }
+  .top-part{
+    display: flex;
+    gap: 20px;
+  }
+  .shimmer-container{
+    display:flex;
+    flex-wrap: wrap;
+    
+
+  }
+  .shimmer{
+    background: #f0f0f0;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+  }
+.log-btn{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 20px;
+    cursor: pointer;
+}

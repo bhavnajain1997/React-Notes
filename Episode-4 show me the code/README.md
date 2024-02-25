@@ -68,7 +68,7 @@ Api -> Config
 # State Variable:-
 Super Power of React Variable
 
-React Hooks:- A React Hooks is a normal Javascript function,which is given to us by React.It is pre build the only things is that the function comes with some super power tht function has some logic return behind the scene in React.
+React Hooks:- A React Hooks is a normal Javascript function,which is given to us by React.It is pre build the only things is that the function comes with some super power that function has some logic return behind the scene in React.
 
 React Hooks (Normal JS utility function)
 useState():- Superpower State variables in react.useState is to create state variable that is why the name is useState.
@@ -76,7 +76,9 @@ New way of creating variables.
    const [searchTxt] = useState();
 If we have to create local variables in react,you need to useState variables.
 
-useEffect():- 
+useEffect():- UseEffect Hooks has own specific purpose.It take two arguments:-
+1. Callback function 
+2. Dependency array
 
 * Render:- Whenever a state variable is updates React will re-renders the component. 
 * Re-render :- The logic of updates is UI is known as re-rendering.
@@ -84,6 +86,20 @@ useEffect():-
 * Reconcillation Algorithm:- Reconcillation Algorithm is also known as React fiber.
 
 * Virtual DOM:- It is not an actual DOM.It is representation of Actual DOM.
+
+
+***************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+Episode-6 Exploring the world
+
+* Monolith and Microservices:-
+* Monolith:- When an app develop traditionally, they all are develop using monolith architecture.
+* Microservices:- We have different services for different job.These all services combined together forms a big app.
+
+** Two Approaches:- How UI & Web App Fetch the data from the backend:-
+
+1. Load => API => Render the UI.
+2. Load => Render => API => Re-render the UI with new data.
 
 
 
