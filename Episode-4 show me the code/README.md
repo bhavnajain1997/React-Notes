@@ -65,7 +65,8 @@ Api -> Config
    export const Component;
    import {Component} from "path";
 
-# State Variable:-
+# State React Variable:-
+whenever state variables update, React triggers a reconcillation cycle(re-renders the component).
 Super Power of React Variable
 
 React Hooks:- A React Hooks is a normal Javascript function,which is given to us by React.It is pre build the only things is that the function comes with some super power that function has some logic return behind the scene in React.
@@ -100,6 +101,9 @@ Episode-6 Exploring the world
 
 1. Load => API => Render the UI.
 2. Load => Render => API => Re-render the UI with new data.
+
+Ques:- Why React is fast?
+Ans:- Virtual DOM is not making React fast. The React Fiber, the new reconcillation algorithm which finds out the difference b/w two virtual DOM and updates the DOM only when required and the portion of DOM which only that portion is required.That's why react is fast.
 
 
 
