@@ -109,3 +109,7 @@
     align-items: center;
     gap: 10px;
 }
+.restaurant-container a{
+    text-decoration: none !important;
+    color: #000 !important;
+}

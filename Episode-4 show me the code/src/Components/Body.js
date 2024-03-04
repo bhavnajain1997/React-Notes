@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import {useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 const Body = () => {
     const [listOfRestaurant , setListOfRestaurant] = useState([]);
     const [filterListRestaurant, setFilterListRestaurant] = useState([]);
@@ -10,13 +11,13 @@ const Body = () => {
        fetchData()
     }, [])
     const fetchData = async () => {
-      const data = await fetch( "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.587555277051887&lng=77.33176790177822&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
 
       const json = await data.json();
       // console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-      setListOfRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants);
-      setFilterListRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants);
-
+      setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.restaurants);
+      setFilterListRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.restaurants);
+console.log(json)
     }
     // Normal JS Variable
     // if(listOfRestaurant.length === 0){
@@ -28,8 +29,7 @@ const Body = () => {
     // else
       return (listOfRestaurant === 0) ? <Shimmer/> : (
       <div className="body-container">
-          <div className="filter">
-          <div className="search">
+        <div className="search">
             <input type="text" className="search-box" value={searchText} onChange={(e) => {
               setSearchText(e.target.value)
             }} />
@@ -40,9 +40,11 @@ const Body = () => {
               setFilterListRestaurant(filterListRestaurant)
             }}>Search</button>
           </div>
+          <div className="filter">
+          
             <button className="filter-btn" onClick={() => {
               let filterRestaurant = listOfRestaurant.filter((res) => {
-               return res.info.avgRating > 4;
+               return res.info.avgRating > 4.5;
               })
               setListOfRestaurant(filterRestaurant);
             }}>
@@ -50,12 +52,15 @@ const Body = () => {
                 </button>
           </div>
         <div className="restaurant-container">
-          {
-           filterListRestaurant.map((restaurant) => {
-            return <RestaurantCard key = {restaurant.info.id} resData = {restaurant}/>
-           }
-           ) 
-          }
+        {
+        filterListRestaurant.map((restaurant) => {
+          
+         return (
+         <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}><RestaurantCard key = {restaurant.info.id} resData = {restaurant}/></Link>
+         )
+        
+})
+                }
   
         </div>
       </div>

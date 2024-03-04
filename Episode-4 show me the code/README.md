@@ -105,6 +105,40 @@ Episode-6 Exploring the world
 Ques:- Why React is fast?
 Ans:- Virtual DOM is not making React fast. The React Fiber, the new reconcillation algorithm which finds out the difference b/w two virtual DOM and updates the DOM only when required and the portion of DOM which only that portion is required.That's why react is fast.
 
+***************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+#Episode-7 - Finding the Path
+
+Ques: - When is the useEffect called?
+Ans:- The useEffect called after every render of that component because we put dependency array over here. So, this dependency array changes the behaviour of its render.
+
+* Note:-
+1. If no dependency array => useEffect is called on every render.
+2. If dependency array is empty = [] => useEffect is called on only initial render(just once).
+3. If we put some value in dependency array then it will only be called when the dependency changes.
+
+* UseState() :- It is used for creating local state variable your functional component.
+
+Note:-
+
+App.js -> RootLevelComponent -> RoutingConfiguration
+
+* Configuration :- Configuration means that some information define what will happen on a specific route.
+* Router Provider :- Router Provider will actually Provider this routing configuration to our app.
+
+      root.render(RouterProvider router = {Component})
+
+Note:- React Router Dom is create a error page for us
+
+Note:- Never use useState inside in If Else condition,For Loop.
+
+Outlet:- Whenever their is a change in the path. This outlet will be filled with the chidren according to the path on what page we are.
+
+* Two types of Routing in web Apps/React Apps:-
+1. Client Side Routing
+2. Server Side Routing
+
+Link:- Link is a component which is given to us react-router-dom which is a special component and behind the scenes link is uses anchor tag.
 
 
 
