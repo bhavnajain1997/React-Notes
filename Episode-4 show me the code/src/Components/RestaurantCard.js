@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
       name,
       avgRating,
       cuisines,
-    } = resData?.info
+    } = resData?.info;
     return (
       <div className="restro-card">
         <img

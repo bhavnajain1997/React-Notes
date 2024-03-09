@@ -5,7 +5,7 @@ const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("LogIn");
 
   useEffect(() => {
-   console.log("useEffect called");
+   //console.log("useEffect called");
   }, []);
     return (
       <div id="heading" className="header">

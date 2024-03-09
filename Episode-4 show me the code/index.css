@@ -113,3 +113,14 @@
     text-decoration: none !important;
     color: #000 !important;
 }
+.menu{
+    padding: 30px;
+}
+.user-card{
+    border: 1px solid #000;
+    padding: 20px;
+   margin-top: 20px;
+}
+.about{
+    margin: 20px;
+}

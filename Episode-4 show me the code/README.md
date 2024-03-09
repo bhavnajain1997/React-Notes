@@ -141,6 +141,27 @@ Outlet:- Whenever their is a change in the path. This outlet will be filled with
 Link:- Link is a component which is given to us react-router-dom which is a special component and behind the scenes link is uses anchor tag.
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Episode-8 Let's get Classy
+
+* React Life Cycle works
+
+- Parent Constructor
+- Parent Render
+ - First Child Constructor
+ - First Child Render
+ 
+ - Second Child Consturctor
+ - Second Child Render
+
+<>DOM Updated - In Single batch<>
+
+ - First ComponentDidMount
+ - Second ComponentDidMount
+- Parent ComponentDidMount
+
+
 
 
 

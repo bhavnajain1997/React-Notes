@@ -29,28 +29,30 @@ console.log(json)
     // else
       return (listOfRestaurant === 0) ? <Shimmer/> : (
       <div className="body-container">
-        <div className="search">
-            <input type="text" className="search-box" value={searchText} onChange={(e) => {
+        <div className="filter">
+            <button className="filter-btn" onClick={() => {
+              console.log("click")
+              let filterRestaurant = listOfRestaurant.filter((restro) => {
+                // return restro.info.avgRating < 4.5
+                console.log(restro)
+              })
+              setListOfRestaurant(filterRestaurant)
+            }}>Top Rated Restaurants</button>
+          
+          <div className="search">
+            <input className="search-box" value={searchText} onChange={(e) => {
               setSearchText(e.target.value)
             }} />
-            <button className="search-btn" onClick={()=>{
+            <button className="search-btn" onClick={() => {
               const filterListRestaurant = listOfRestaurant.filter((res) => {
                 return res.info.name.toLowerCase().includes(searchText.toLowerCase());
               })
               setFilterListRestaurant(filterListRestaurant)
             }}>Search</button>
           </div>
-          <div className="filter">
-          
-            <button className="filter-btn" onClick={() => {
-              let filterRestaurant = listOfRestaurant.filter((res) => {
-               return res.info.avgRating > 4.5;
-              })
-              setListOfRestaurant(filterRestaurant);
-            }}>
-                Top Rated Restaurants
-                </button>
           </div>
+          
+          
         <div className="restaurant-container">
         {
         filterListRestaurant.map((restaurant) => {
