@@ -5,47 +5,35 @@ class UserClass extends React.Component {
     constructor (props){
         super(props);
        // console.log(props);
-       console.log(this.props.name + "Children Constructor");
+    //    console.log(this.props.name + "Children Constructor");
         this.state = {
-           count : 0,
-           countdecrease : 0,
-           reset : 0
-        } 
+            userInfo : {
+                name : "Dummy",
+                location : "Default",
+            },
+        } ;
     }
-    componentDidMount (){
-        console.log(this.props.name + "Child Component Did Mount")
+    async componentDidMount (){
+        //console.log(this.props.name + "Child Component Did Mount")
         //API Calls Here
+        const data = await fetch("https://api.github.com/users/bhavnajain1997");
+        const json = await data.json(" ");
+        this.setState({
+            userInfo : json
+        }    
+        )
+        console.log(json);
         
     }
     render(){
-        console.log("Children Render");
-        const {name, location} = this.props;
-        const {count} = this.state;
+        // console.log("Children Render");
+        const {avatar_url,name, location,company} = this.state.userInfo;
         return(
             <div className="user-card">
-                <h1>Count : {count}</h1>
-                <button onClick={() => {
-                  //NEver update state variable directly to 
-                  this.setState({
-                    count : this.state.count + 1
-                })
-                   console.log(this.state.count)
-                }}>Count Increase</button>
-                <button onClick={() => {
-                    this.setState({
-                        count : this.state.count - 1
-                    })
-                }}>Count Decrease</button>
-                <button onClick={() => {
-                    this.setState({
-                        count : 0
-                    }
-
-                    )
-                }}>Reset</button>
+                <img src={avatar_url}/>
                 <h3>Name: {name}</h3>
                 <h4>Location: {location}</h4>
-                <h4>Contact: bhavnajain1997@gmail.com</h4>
+                <h4>Contact: {company}</h4>
             </div>
         )
     }

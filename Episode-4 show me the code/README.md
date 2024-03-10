@@ -161,6 +161,23 @@ Episode-8 Let's get Classy
  - Second ComponentDidMount
 - Parent ComponentDidMount
 
+******Mounting
+
+Constructor(dummy)
+Render(dummy)
+  <>HTML Dummy<>
+Component Did Mount
+     <>Api Calls<>
+     <>this.setState<> -> State variable is updated
+
+-----Updated
+    render(api data)
+    <>HTML (new API Data)<>
+component Did update
+
+
+
+
 
 
 
