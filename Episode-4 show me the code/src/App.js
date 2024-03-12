@@ -6,12 +6,12 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
-import { createBrowserRouter, RouterProvider, Outlets, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 
 
 const AppLayout = () => {
-  return (
+  return  (
     <div className="app">
       <Header />
       <Outlet />

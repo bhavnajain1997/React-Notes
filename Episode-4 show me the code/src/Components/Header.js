@@ -1,9 +1,10 @@
 import { useState , useEffect} from "react";
 import { LOGO_URL } from "../utilis/constants";
+import useOnlineStatus from "../utilis/useOnlineStatus";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("LogIn");
-
+  const onlineStatus = useOnlineStatus();
   useEffect(() => {
    //console.log("useEffect called");
   }, []);
@@ -17,6 +18,9 @@ const Header = () => {
         </div>
         <div className="nav-items">
           <ul>
+            <li>
+            <Link > Online Status : {onlineStatus ? "🟢" : "🔴"}</Link>
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>

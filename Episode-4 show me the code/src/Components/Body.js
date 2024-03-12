@@ -1,11 +1,14 @@
+
 import RestaurantCard from "./RestaurantCard";
 import {useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from '../utilis/useOnlineStatus';
 const Body = () => {
     const [listOfRestaurant , setListOfRestaurant] = useState([]);
     const [filterListRestaurant, setFilterListRestaurant] = useState([]);
     const [searchText, setSearchText] = useState("")
+    
     useEffect(() => {
       //  console.log("useEffect Called")
        fetchData()
@@ -17,19 +20,21 @@ const Body = () => {
       // console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.restaurants);
       setFilterListRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.restaurants);
-console.log(json)
-    }
-    // Normal JS Variable
-    // if(listOfRestaurant.length === 0){
-    //   return(
-    //     <Shimmer/>
-    //   )
-      
-    // }
-    // else
-      return (listOfRestaurant === 0) ? <Shimmer/> : (
+    };
+
+    const onlineStatus = useOnlineStatus();
+
+    if(onlineStatus === false) 
+    return (
+    <h1>Looks like you're offline !! Please check your internet connection.</h1>
+    )
+
+    
+
+      return   (
       <div className="body-container">
         <div className="filter">
+          
             <button className="filter-btn" onClick={() => {
               console.log("click")
               let filterRestaurant = listOfRestaurant.filter((restro) => {
