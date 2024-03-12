@@ -178,10 +178,16 @@ component Did update
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Episode-9 Optimizing Our App
-
+Modularity:- Modularity means breakdown the code into different modules.So, that your code more maintainable and more testable.
+lazy() :- Lazy is a loading function component, whuch is given to us by react, It is comed as a named export.
 // Dynamic Bundling
 // Chunking
 // CodeSplitting
+// lazy loading
+// on demand loading
+// dynamic import
+
+* Suspense:- Suspense is a component which is given to us by react. 
 
 
 
