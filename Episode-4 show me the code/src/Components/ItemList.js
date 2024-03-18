@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utilis/constants"
 const ItemList = ({items}) => {
-    console.log(items)
+   // console.log(items)
      return(
         <div>
             {items.map(item => <li className="list-none flex justify-between items-center py-2 " key = {item.card.info.id}>
@@ -9,7 +9,7 @@ const ItemList = ({items}) => {
                 <span className="text-red-400 font-bold">{"₹"}{item.card.info.price/100 || item.card.info.defaultPrice/100}</span>
                 <p className="text-red-900 text-xs font-bold text-left">{item.card.info.description}</p>
                 </div>
-                <div className="w-3/12 relative text-center left-7">
+                <div className="w-3/12 relative text-center ">
                 <div className="absolute bottom-1 text-center">
                     <button className="bg-black text-white py-2 px-10 ">Add +</button>
                     </div>
