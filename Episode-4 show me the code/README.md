@@ -193,7 +193,7 @@ lazy() :- Lazy is a loading function component, whuch is given to us by react, I
 
 Episode-9 Data is the New Oil
 
-* Higher Order Component:- Higher Order Component is a function that takes a component and returns a component.
+* Higher Order Component:- Higher Order Component is a function that takes a component and  enhances the component returns a component.
 
 
 

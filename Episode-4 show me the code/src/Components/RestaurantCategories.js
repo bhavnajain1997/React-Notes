@@ -14,7 +14,7 @@ const RestaurantCategories = ({data , showItems, setShowIndex}) => {
         <div>
             {/* Header */}
             <div className="w-6/12 m-auto my-6 bg-gray-50 shadow-lg p-4">
-            <div className=" flex justify-between  items-center pb-3 cursor-pointer" onClick={handleClick}>
+            <div className=" flex justify-between  items-center pb-3 cursor-pointer" onClick={handleClick} onChange={(e) => {setShowIndex(e.target.value)}}>
                 <span className="font-bold text-lg">{data?.title} ({data?.itemCards?.length})</span>
                 <span>⬇️</span>
 

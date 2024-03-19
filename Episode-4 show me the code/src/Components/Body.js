@@ -1,16 +1,20 @@
 
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useContext} from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from '../utilis/useOnlineStatus';
 import { withPromotedLabel } from "./RestaurantCard";
+import UserContext from "../utilis/UserContext";
+import User from "./User";
+
 const Body = () => {
     const [listOfRestaurant , setListOfRestaurant] = useState([]);
     const [filterListRestaurant, setFilterListRestaurant] = useState([]);
     const [searchText, setSearchText] = useState("");
     const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
     
+    const {loggedInUser , setUserName} = useContext(UserContext)
     console.log(listOfRestaurant)
     useEffect(() => {
       //  console.log("useEffect Called")
@@ -55,7 +59,10 @@ const Body = () => {
               setFilterListRestaurant(filterRestaurant)
             }}>Top Rated Restaurants</button>
           
-          
+          <div>
+            <label>UserName : </label>
+            <input type="text" className="border border-black p-2" value={loggedInUser} onChange={(e) => setUserName(e.target.value)}/>
+          </div>
         </div>
           
           

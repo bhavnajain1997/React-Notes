@@ -8,15 +8,31 @@ import Contact from "./Components/Contact";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {useState, useEffect} from 'react';
+import UserContext from "./utilis/UserContext";
+import User from "./Components/User";
 
 
 const Grocery = lazy(() => import("./Components/Grocery"))
 const AppLayout = () => {
+
+  // authentication code return
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+ // Make an api call and send username and password
+ const data = {
+  name : 'Bhavna Jain'
+ };
+ setUserName(data.name)
+  }, [])
   return  (
-    <div className="app">
+    <UserContext.Provider value = {{loggedInUser: userName, setUserName}}> 
+     <div className="app">
       <Header />
       <Outlet />
-    </div>
+     </div>
+    </UserContext.Provider>
   );
 };
 

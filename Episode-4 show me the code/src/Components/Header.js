@@ -1,13 +1,17 @@
-import { useState , useEffect} from "react";
+import { useState , useContext} from "react";
 import { LOGO_URL } from "../utilis/constants";
 import useOnlineStatus from "../utilis/useOnlineStatus";
 import { Link } from "react-router-dom";
+import UserContext from "../utilis/UserContext";
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("LogIn");
   const onlineStatus = useOnlineStatus();
-  useEffect(() => {
-   //console.log("useEffect called");
-  }, []);
+
+  const {loggedInUser} = useContext(UserContext)
+  console.log(loggedInUser)
+  // useEffect(() => {
+  //  //console.log("useEffect called");
+  // }, []);
     return (
       <div id="heading" className="header shadow-xl bg-pink-300">
         <div className="max-w-6xl  m-auto flex justify-between items-center">
@@ -41,6 +45,9 @@ const Header = () => {
                  btnNameReact === "LogIn" ? setBtnNameReact("LogOut") : setBtnNameReact("LogIn")
                  
             }}>{btnNameReact}</button>
+            <li className="px-4">
+              <Link to="#">{loggedInUser}</Link>
+            </li>
           </ul>
         </div>
         </div>
