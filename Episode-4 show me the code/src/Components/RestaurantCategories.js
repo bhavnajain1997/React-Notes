@@ -1,5 +1,5 @@
 import ItemList from "./ItemList";
-import { useState } from 'react'
+//import { useState } from 'react'
 const RestaurantCategories = ({data , showItems, setShowIndex}) => {
     // Uncontrolled component
     // const [showItems, setShowItems] = useState();

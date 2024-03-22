@@ -195,6 +195,16 @@ Episode-9 Data is the New Oil
 
 * Higher Order Component:- Higher Order Component is a function that takes a component and  enhances the component returns a component.
 
+Episode-12 Let's build our Store
+
+# Redux toolkit
+- Install @reduxjs/ toolkit and react redux
+- Build our store
+- connect our store to our app.
+- create a slice (cart slice).
+- dispatch (action)
+- Selector
+
 
 
 
