@@ -205,6 +205,24 @@ Episode-12 Let's build our Store
 - dispatch (action)
 - Selector
 
+# Types of testing (developer)
+ - Unit Testing
+ - Integration Testing
+ - End to End Testing - e2e testing\
+
+# Setting up Testing in our App
+
+- Install React Testing Library
+- Installed Jest
+- Installed babel dependencies which are required when we using jest with babel.
+- Configure Babel 
+- Config Parcel Config file to disable default babel transpilation.
+- Jest Configuration -- npx jest --init
+- Installed JSDOM library
+- Installed @babel/preset-react - to make JSX work in test cases.
+- Include @babel/preset-react inside my babel config.
+- Install @testing-library/jest-dom.
+
 
 
 

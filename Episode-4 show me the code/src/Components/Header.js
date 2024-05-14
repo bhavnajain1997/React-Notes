@@ -9,14 +9,14 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext)
-  console.log(loggedInUser)
+ // console.log(loggedInUser)
   // useEffect(() => {
   //  //console.log("useEffect called");
   // }, []);
 
   // Subscribing to the store using a selector.
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems)
+  //console.log(cartItems)
     return (
       <div id="heading" className="header shadow-xl bg-pink-300">
         <div className="max-w-6xl  m-auto flex justify-between items-center">
@@ -29,7 +29,7 @@ const Header = () => {
         <div className="nav-items">
           <ul className="text-white flex m-6">
             <li className="px-4">
-            <Link to='/' className=""> Online Status : {onlineStatus ? "🟢" : "🔴"}</Link>
+            <Link to='/' className=""> Online Status : {onlineStatus == "true" ? "🟢" : "🔴"}</Link>
             </li>
             <li className="px-4">
               <Link to="/">Home</Link>
