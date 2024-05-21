@@ -1,25 +1,24 @@
 import { useContext } from "react";
-import UserContext from "../utilis/UserContext";
 import { CDN_URL } from "../utilis/constants";
 import UserContext from "../utilis/UserContext";
-import User from "./User";
+
 
 const RestaurantCard = (props) => {
     const { resData } = props;
-    const { loggedInUser } = useContext(UserContext);
+    const { loggedInUser  } = useContext(UserContext);
     const {
-      cloudinaryImageId,
+    cloudinaryImageId,
       name,
       avgRating,
       cuisines,
     } = resData?.info;
-
+console.log(resData)
     return (
-      <div className="restro-card bg-slate-300 hover:bg-white hover:shadow h-[397px] w-[256px] mx-3 my-6 p-2">
+      <div data-testid = "resCard" className="restro-card bg-slate-300 hover:bg-white hover:shadow h-[397px] w-[256px] mx-3 my-6 p-2">
         <img className="w-[256px] h-[192px]"
           src={
            CDN_URL +
-            cloudinaryImageId
+           cloudinaryImageId
           }
         />
         <h3 className="font-bold py-2">{name}</h3>

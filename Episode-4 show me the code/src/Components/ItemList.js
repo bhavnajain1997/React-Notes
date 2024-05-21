@@ -10,8 +10,8 @@ const ItemList = ({items}) => {
      console.log(items)
      return(
         <div>
-            {items.map(item => <li className="list-none flex justify-between items-center py-2 " key = {item.card.info.id}>
-                <div className="flex-col items-start text-left  w-9/12">
+            {items.map(item => <li data-testid = "foodItems" className="list-none flex justify-between items-center py-2 " key = {item.card.info.id}>
+                <div  className="flex-col items-start text-left  w-9/12">
                 <span className="font-bold">{item.card.info.name}</span>
                 <span className="text-red-400 font-bold">{"₹"}{item.card.info.price/100 || item.card.info.defaultPrice/100}</span>
                 <p className="text-red-900 text-xs font-bold text-left">{item.card.info.description}</p>

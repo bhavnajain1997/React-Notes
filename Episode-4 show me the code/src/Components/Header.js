@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import UserContext from "../utilis/UserContext";
 import { useSelector } from "react-redux";
 const Header = () => {
-  const [btnNameReact, setBtnNameReact] = useState("LogIn");
+  const [btnNameReact, setBtnNameReact] = useState("Login");
   const onlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext)
@@ -29,7 +29,7 @@ const Header = () => {
         <div className="nav-items">
           <ul className="text-white flex m-6">
             <li className="px-4">
-            <Link to='/' className=""> Online Status : {onlineStatus == "true" ? "🟢" : "🔴"}</Link>
+            <Link to='/' className=""> Online Status : {window.navigator.onLine === true ? "🟢" : "🔴"}</Link>
             </li>
             <li className="px-4">
               <Link to="/">Home</Link>
@@ -44,10 +44,10 @@ const Header = () => {
               <Link to="/grocery">Grocery</Link>
             </li>
             <li className="px-4">
-              <Link to="/cart">🛒Cart ({cartItems.length} items)</Link>
+              <Link to="/cart">Cart - ({cartItems.length} items)</Link>
             </li>
             <button className="log-btn" onClick={() =>{
-                 btnNameReact === "LogIn" ? setBtnNameReact("LogOut") : setBtnNameReact("LogIn")
+                 btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login")
                  
             }}>{btnNameReact}</button>
             <li className="px-4">

@@ -4,7 +4,6 @@ import {useState, useEffect, useContext} from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from '../utilis/useOnlineStatus';
-import { withPromotedLabel } from "./RestaurantCard";
 import UserContext from "../utilis/UserContext";
 import User from "./User";
 
@@ -20,9 +19,10 @@ const Body = () => {
       //  console.log("useEffect Called")
        fetchData()
     }, [])
-    
+   
+
     const fetchData = async () => {
-      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6971398&lng=77.1596946&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
 
       const json = await data.json();
       // console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -39,10 +39,10 @@ const Body = () => {
     }
     console.log(listOfRestaurant)
       return (listOfRestaurant.length === 0) ? (<Shimmer/>) :  (
-      <div className="body-container max-w-6xl mx-auto">
+      <div className="body-container max-w-6xl mx-auto" data-testid = "resCard">
         <div className="filter flex items-center gap-x-5 py-10">
         <div className="search p-2 flex gap-4">
-            <input className="search-box p-2 border-2 border-solid border-black" value={searchText} onChange={(e) => {
+            <input className="search-box p-2 border-2 border-solid border-black" data-testid = "searchInput" value={searchText} onChange={(e) => {
               setSearchText(e.target.value)
             }} />
             <button className="search-btn p-2 bg-green-300 border-2 border-solid border-black" onClick={() => {
@@ -73,6 +73,7 @@ const Body = () => {
         filterListRestaurant.map((restaurant) => {
           
          return(
+          
          <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}>
           {
             restaurant.info.areaName === 'Indiranagar' ? (
@@ -83,8 +84,9 @@ const Body = () => {
           }
           
           </Link>
+          
          )
-        
+         
 })
                 }
   
